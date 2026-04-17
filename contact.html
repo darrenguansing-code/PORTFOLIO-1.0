@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Darren</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <h2>Darren</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="contact-page" id="contact-section">
+    <div class="contact-card">
+        <span class="eyebrow">Let&apos;s Connect</span>
+        <h1>Get in touch for collaboration, questions, or ideas.</h1>
+        <p>Send a quick message and I’ll respond as soon as possible.</p>
+
+        <form onsubmit="return validateForm()">
+            <label class="form-label" for="name">Your Name / Company Name </label>
+            <input class="form-input" type="text" id="name" placeholder="Enter your name">
+
+            <label class="form-label" for="email">Your Email</label>
+            <input class="form-input" type="email" id="email" placeholder="Enter your email">
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="error" class="form-error"></p>
+        </form>
+    </div>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
